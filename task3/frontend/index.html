@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>User Registration & Validation API</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style/bootstrap.min.css">
+<script src="script/bootstrap.bundle.min.js" defer></script>
+</head>
+<body>
+<div class="container mt-3">
+  <h2>Registration form</h2>
+  <form action="../backend/server.php" method="POST">
+    <div class="row">
+        <div class="col-md-4">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="John" name="fname" required>
+        </div>
+        <div class="col-md-4">
+          <label for="middleName" class="form-label">Middle name (optional)</label>
+          <input type="text" class="form-control" id="middleName" name="mname" placeholder="A.">
+        </div>
+        <div class="col-md-4">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Doe" name="lname" required>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
+    </div>
+	<div class="mb-3">
+        <label for="phone" class="form-label">Phone no.</label>
+        <input type="tel" class="form-control" id="phone" placeholder="123-456-7890" name="phone" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+</html>
